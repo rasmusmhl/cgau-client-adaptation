@@ -1,0 +1,63 @@
+num_sampled_clients:
+  value: 10
+  desc: 'Number of cliens sampled at each round of FL training. If num_sampled_clients==num_clients all clients are part of each round.'
+num_local_steps:
+  value: 10
+  desc: 'Number of steps/batches to do locally per round of FL training. Specify this or num_epochs, not both.'
+num_clients:
+  value: 10
+  desc: 'Number of cliens to simulate. '
+simulated_client_dim_reduction:
+  value: 'pca'
+  desc: 'The dimensionality reduction algorithm to use prior to K-means clustering in non-iid client simulation. Can be either pca or tsne. '
+label_shuffle_percentage:
+  value: 0.00
+  desc: 'The percentage of labels to shuffle after K-means client simulation, the higher the more iid the clients are supposed to be.'
+batch_size:
+  value: 32
+  desc: 'Training batch size, number of samples per step.'
+max_num_fl_rounds:
+  value: 50
+  desc: 'Maximum number of rounds do to in federated learning (samples each round is defined by num_epochs or num_local_steps).'
+dropout:
+  value: 0.5
+  desc: 'The dropout rate between layers in the MLP.'
+hidden_layer_size:
+  value: 64
+  desc: 'Number of units in each layer of the MLP.'
+num_layers:
+  value: 2
+  desc: 'Number of layers in the MLP.'
+client_learning_rate:
+  value: 0.01
+  desc: 'The learning rate for the local client optimization for the SGD algorithm.'
+client_learning_rate_decay:
+  value: 0.0001
+  desc: 'The decay rate for the local client optimization for the SGD algorithm.'
+client_learning_rate_momentum:
+  value: 0.90
+  desc: 'The momentum for the local client optimization for the SGD algorithm.'
+shuffle_buffer:
+  value: 1000
+  desc: 'The size of the buffer for shuffling (should be approximately the size of the datasets).'
+prefetch_buffer:
+  value: 10
+  desc: 'The size of the buffer for prefetching (for efficient feeding to GPU). Not too important here, I believe...'
+embedding_size:
+  value: 1664 
+  desc: 'The size of the input features, as defined by the output of the used YamNet embedding.'
+num_classes:
+  value: 10
+  desc: 'Number of classes in the problem.'
+logdir:
+  value: 'logs/'
+  desc: 'Directory to store logs in.'
+seed:
+  value: 0
+  desc: 'Randomization seed. The default one is overwritten, however, in the main.py.'
+experiment_group:
+  value: 'test'
+  desc: 'Default experiment_group for weights and biases logging.'
+global_conditioning:
+  value: False
+  desc: 'Whether to learn a set of weights for modulation of features locally at each client.'
