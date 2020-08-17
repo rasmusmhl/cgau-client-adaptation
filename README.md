@@ -6,7 +6,12 @@ This is the official code for reproducing experiments from the paper [Client Ada
 ## documentation
 We used [Weights&Biases](https://www.wandb.com/) to run and document the experiments. 
 
-All the code to rerun our experiments lies in the [src](src) folder, divided up into [CIFAR10](src/cifar10) and [cough detection](federated_cough_detector).
+All the code to rerun our experiments lies in the [src](src) folder, divided up into [CIFAR10](src/cifar10) and [federated_cough_detector](src/federated_cough_detector). 
+
+Preprocessing code is provided in [resource_generation](src/resource_generation); to run these scripts additional ressources like raw data and model weights from other repos are needed. Info on the Freesound General-Purpose Audio Tagging Challenge (FSD) is available at the original [kaggle competition site](https://www.kaggle.com/c/freesound-audio-tagging).
+
+Code for generating figures and tables in the paper are in the notebook in [make_figures](src/make_figures), although the underlying experimental results (models, model performances, etc.) are not provided. 
+
 
 ## reference
 
