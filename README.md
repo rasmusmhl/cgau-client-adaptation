@@ -1,7 +1,7 @@
 # cgau-client-adaptation
 This is the official code for reproducing experiments from the paper [Client Adaptation improves Federated Learning with Simulated Non-IID Clients](https://arxiv.org/abs/2007.04806) (International Workshop on Federated Learning for User Privacy and Data Confidentiality in Conjunction with ICML 2020 pdf). 
 
-*Note: this repo is actively maintained. For any questions please file an issue.*
+*Note: this repo is not actively maintained. For any questions feel free to try to file an issue, but the code is provided as is.*
 
 ## documentation
 We used [Weights&Biases](https://www.wandb.com/) to run and document the experiments. 
