@@ -6,7 +6,7 @@ This is the official code for reproducing experiments from the paper [Client Ada
 ## documentation
 We used [Weights&Biases](https://www.wandb.com/) to run and document the experiments. 
 
-All the code to rerun our experiments lies in the [src](src) folder, divided up into [CIFAR10](src/cifar10) and [cough detection](TODO).
+All the code to rerun our experiments lies in the [src](src) folder, divided up into [CIFAR10](src/cifar10) and [cough detection](federated_cough_detector).
 
 ## reference
 
